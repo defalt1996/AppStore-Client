@@ -1,0 +1,1 @@
+Choose basic MVP architecture
