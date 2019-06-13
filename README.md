@@ -1,1 +1,2 @@
-Choose basic MVP architecture
+Choose basic MVP architecture.
+Config local git account
