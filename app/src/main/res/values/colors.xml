@@ -351,4 +351,7 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorDivider">#BEBEBE</color>
     <color name="colorGreen">#85ca33</color>
+
+    <color name="tab_unselect">#c9c9c9</color>
+
 </resources>
