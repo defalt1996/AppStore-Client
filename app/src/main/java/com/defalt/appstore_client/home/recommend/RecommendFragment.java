@@ -34,20 +34,11 @@ public class RecommendFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FreeFictionFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static RecommendFragment newInstance(String param1, String param2) {
+
+    public static RecommendFragment newInstance() {
         RecommendFragment fragment = new RecommendFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+
         fragment.setArguments(args);
         return fragment;
     }
@@ -65,7 +56,7 @@ public class RecommendFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.fragment_home_recommend, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

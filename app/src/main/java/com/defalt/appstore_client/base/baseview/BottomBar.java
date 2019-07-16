@@ -90,7 +90,7 @@ public class BottomBar extends LinearLayout {
         return this;
     }
 
-    private interface OnTabSelectedListener{
+    public interface OnTabSelectedListener{
         void onTabSelected(int position, int prePosition);
         void onTabNotSelected(int position);
         void onTabReselected(int postion);

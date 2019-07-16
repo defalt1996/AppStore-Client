@@ -15,26 +15,16 @@ public class BaseActivity extends SupportActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_base);
 
     }
 
-//    @Override
-//    public void setContentView(View view) {
-//        super.setContentView(view);
-//        ButterKnife.bind(this);
-//    }
-//
-//    @Override
-//    public void setContentView(int layoutResID) {
-//        super.setContentView(layoutResID);
-//        ButterKnife.bind(this);
-//    }
-//
-//    @Override
-//    public void setContentView(View view, ViewGroup.LayoutParams params) {
-//        super.setContentView(view, params);
-//        ButterKnife.bind(this);
-//    }
+
+    @Override
+    public void setContentView(int layoutResID) {
+        super.setContentView(layoutResID);
+
+        //因为需要在setContentView之后bind Butterknife，所以重写加入bind
+        ButterKnife.bind(this);
+    }
 
 }
